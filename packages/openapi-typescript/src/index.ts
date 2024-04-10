@@ -123,7 +123,7 @@ async function openapiTS(schema: string | URL | OpenAPI3 | Readable, options: Op
 
   if (options.rootTypes) {
     for (const schema of Object.keys(typedComponents.schemas as object)) {
-      output.push(`export type ${schema} = external["."]["components"]["schemas"]["${schema}"];\n`);
+      output.push(`export type ${schema} = components["schemas"]["${schema}"];\n`);
     }
   }
 

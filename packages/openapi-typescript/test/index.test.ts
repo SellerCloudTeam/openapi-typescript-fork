@@ -1287,7 +1287,7 @@ export type operations = Record<string, never>;
 `);
       });
     });
-    
+
     describe("rootTypes helpers", () => {
       test("should be added only when used", async () => {
         const generated = await openapiTS(
@@ -1315,7 +1315,7 @@ export type operations = Record<string, never>;
           { rootTypes: true },
         );
         expect(generated).toBe(`${BOILERPLATE}${WITH_REQUIRED_TYPE_HELPERS}
-export type User = external["."]["components"]["schemas"]["User"];
+export type User = components["schemas"]["User"];
 
 export type paths = Record<string, never>;
 
