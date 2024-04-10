@@ -40,6 +40,6 @@ jobs:
       - run: cd packages/openapi-typescript
       - run: pnpm install
       - run: pnpm build
-      - run: npm publish --filter @sellercloudteam/openapi-typescript --no-git-checks
+      - run: pnpm publish --filter openapi-typescript --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
