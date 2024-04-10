@@ -1,5 +1,5 @@
 {
-  "name": "openapi-typescript",
+  "name": "@sellercloudteam/openapi-typescript",
   "description": "Convert OpenAPI 3.0 & 3.1 schemas to TypeScript",
   "version": "6.7.0",
   "author": {
