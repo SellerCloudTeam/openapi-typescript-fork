@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bin": {
-    "openapi-typescript": "bin/cli.js"
+    "sc-openapi-typescript": "bin/cli.js"
   },
   "type": "module",
   "main": "./dist/index.js",
